@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import MyDisplay from "./MyDisplay";
-import MyButton from "./MyButton";
-import "./MyCalculator.css";
+import MyDisplay from "./MyDisplay"; // 導入顯示組件
+import MyButton from "./MyButton"; // 導入按鈕組件
+import "./MyCalculator.css"; // 導入樣式表
 
 function MyCalculator() {
-  const [result, setResult] = useState("0");
-  // handleClick是MyButton的事件處理常式
+  const [result, setResult] = useState("0"); // 使用狀態來追蹤計算機的結果，初始為"0"
+  // 點擊事件處理函式，處理按鈕點擊後的邏輯
   const handleClick = (value) => {
     // alert(value);
     switch (value) {
@@ -24,32 +24,33 @@ function MyCalculator() {
       case "-":
       case "*":
       case "/":
+        // 如果當前結果為"0"，則直接將按鈕的值設置為新的結果值
         if (result === "0") {
           setResult(value);
         } else {
-          setResult(result + value);
+          setResult(result + value); // 否則將按鈕的值附加到當前結果值後面
         }
         break;
       case "=":
-        setResult(eval(result).toString());
+        setResult(eval(result).toString()); // 計算結果
         break;
       case "c":
-        setResult("");
+        setResult(""); // 清除結果
         break;
       case "+/-":
-        setResult(parseInt(result, 10) * -1);
+        setResult(parseInt(result, 10) * -1); // 切換正負號
         break;
       case "%":
-        setResult(parseInt(result, 10) / 100);
+        setResult(parseInt(result, 10) / 100); // 計算百分比
         break;
       default:
         break;
     }
   };
   return (
-    <div className="calculator">
-      <MyDisplay result = {result} />
-      <MyButton buttonClicked={handleClick} />
+    <div className="calculator"> {/* 計算機容器 */}
+      <MyDisplay result = {result} /> {/* 顯示組件，顯示當前結果 */}
+      <MyButton buttonClicked={handleClick} /> {/* 按鈕組件，將點擊事件處理函式傳遞給子組件 */}
     </div>
   );
 }
