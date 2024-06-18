@@ -21,7 +21,7 @@ function MySlider({onChange}) {
         value={value} // 綁定滑動條值為狀態 value
         onChange={handleChange} // 當滑動條值改變時調用 handleChange 函數
       />
-      <span>{value}</span> // 顯示滑動條當前值
+      <span>{value}</span>  
     </div>
   );
 }
