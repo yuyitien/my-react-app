@@ -1,62 +1,62 @@
 .calculator {
-    width: 320px;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 10px;
-    background-color: grey;
-    margin: auto;
-    padding: 10px;
+    width: 320px; /* 寬度為 320 像素 */
+    color: white; /* 文字顏色為白色 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 字體為 Segoe UI 或類似字體 */
+    border-radius: 10px; /* 圓角半徑為 10px */
+    background-color: grey; /* 背景顏色為灰色 */
+    margin: auto; /* 自動居中 */
+    padding: 10px; /* 內邊距為 10px */
 }
 
 .board {
-    display: inline-block;
-    margin: 10px;
+    display: inline-block; /* 內容以內聯塊元素方式顯示 */
+    margin: 10px; /* 外邊距為 10px */
 }
 
 .display {
-    width: 100%;
-    height: 75px;
-    background-color: black;
-    text-align: right;
-    font-size: 50px;
-    border-radius: 5px;
+    width: 100%; /* 寬度佔滿父元素 */
+    height: 75px; /* 高度為 75px */
+    background-color: black; /* 背景顏色為黑色 */
+    text-align: right; /* 文字右對齊 */
+    font-size: 50px; /* 字體大小為 50px */
+    border-radius: 5px; /* 圓角半徑為 5px */
 }
 
 .btn {
-    background-color: #323232;
-    color: white;
-    width: 60px;
-    height: 60px;
-    font-size: 25px;
-    border-radius: 50%;
-    outline: none;
-    border: 0px;
-    padding: 5%;
-    margin: 5px;
-    cursor: pointer;
+    background-color: #323232; /* 按鈕背景顏色為深灰色 */
+    color: white; /* 按鈕文字顏色為白色 */
+    width: 60px; /* 寬度為 60px */
+    height: 60px; /* 高度為 60px */
+    font-size: 25px; /* 字體大小為 25px */
+    border-radius: 50%; /* 圓角半徑為按鈕直徑的一半，使其呈現圓形 */
+    outline: none; /* 移除按鈕焦點時的藍色外框 */
+    border: 0px; /* 移除按鈕的邊框 */
+    padding: 5%; /* 內邊距為按鈕尺寸的 5% */
+    margin: 5px; /* 外邊距為 5px */
+    cursor: pointer; /* 鼠標懸停時顯示為手型 */
 }
 
 .btn-action {
-    background-color: brown;
-    color: bisque;
+    background-color: brown; /* 動作按鈕背景顏色為棕色 */
+    color: bisque; /* 動作按鈕文字顏色為米色 */
 }
 
 .btn-operator {
-    background-color: coral;
+    background-color: coral; /* 運算符按鈕背景顏色為珊瑚色 */
 }
 
 .btn-0 {
-    width: 130px;
-    border-radius: 30px;
+    width: 130px; /* 寬度為 130px */
+    border-radius: 30px; /* 圓角半徑為 30px */
 }
 
 .btn:hover{
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    background-color: white; /* 按鈕懸停時背景顏色變為白色 */
+    color: black; /* 按鈕懸停時文字顏色變為黑色 */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* 按鈕懸停時顯示陰影效果 */
 }
 
 .btn:active{
-    background-color: darkred;
-    color: white;
+    background-color: darkred; /* 按鈕按下時背景顏色變為深紅色 */
+    color: white; /* 按鈕按下時文字顏色變為白色 */
 }

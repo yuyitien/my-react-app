@@ -24,6 +24,7 @@ function MyCalculator() {
       case "-":
       case "*":
       case "/":
+        // 如果結果為初始狀態"0"，則用新值取代，否則將新值附加在現有結果後面
         if (result === "0") {
           setResult(value);
         } else {
@@ -31,15 +32,19 @@ function MyCalculator() {
         }
         break;
       case "=":
+        // 計算結果
         setResult(eval(result).toString());
         break;
       case "c":
+        // 清除結果
         setResult("");
         break;
       case "+/-":
+        // 切換正負號
         setResult(parseInt(result, 10) * -1);
         break;
       case "%":
+        // 計算百分比
         setResult(parseInt(result, 10) / 100);
         break;
       default:
@@ -48,7 +53,9 @@ function MyCalculator() {
   };
   return (
     <div className="calculator">
+      {/* 呈現計算結果的組件 */}
       <MyDisplay result = {result} />
+      {/* 按鈕面板組件，將點擊事件傳遞給handleClick函式 */}
       <MyButton buttonClicked={handleClick} />
     </div>
   );

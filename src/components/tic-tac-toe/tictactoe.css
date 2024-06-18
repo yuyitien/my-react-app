@@ -1,47 +1,48 @@
 .square {
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    border: 1px solid grey;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    line-height: 50px;
-    margin: auto;
-    float: left;
-    text-align: center;
-    cursor: pointer;
+    background-color: white; /* 背景顏色設置為白色 */
+    width: 50px; /* 寬度為 50px */
+    height: 50px; /* 高度為 50px */
+    border: 1px solid grey; /* 邊框為 1px 灰色實線 */
+    font-size: 24px; /* 字體大小為 24px */
+    font-weight: bold; /* 字體加粗 */
+    cursor: pointer; /* 鼠標懸停時顯示為指針 */
+    line-height: 50px; /* 行高等於元素高度，使內容垂直居中 */
+    margin: auto; /* 自動居中 */
+    float: left; /* 浮動到左側 */
+    text-align: center; /* 文本居中對齊 */
+    cursor: pointer; /* 鼠標懸停時顯示為指針 */
 }
 
 .square:hover {
-    background-color: deeppink;
-    color: white;
+    background-color: deeppink; /* 滑鼠懸停時背景顏色變為深粉色 */
+    color: white; /* 文字顏色變為白色 */
 }
 
 .game {
-    width: 400px;
-    margin: auto;
-    border: 3px solid blue;
-    border-radius: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    width: 400px; /* 寬度為 400px */
+    margin: auto; /* 上下左右居中對齊 */
+    border: 3px solid blue; /* 外框為 3px 寬度的藍色實線 */
+    border-radius: 20px; /* 邊框半徑為 20px，呈現圓角 */
+    padding: 20px; /* 內邊距為 20px */
+    display: flex; /* 使用 Flexbox 顯示 */
+    flex-direction: row; /* 子元素的排列方向為行 */
+    align-items: center; /* 子元素垂直居中對齊 */
 }
 
 .game-board {
-    background-color: gainsboro;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid black;
+    background-color: gainsboro; /* 背景顏色設置為淺灰色 */
+    padding: 10px; /* 內邊距為 10px */
+    border-radius: 10px; /* 圓角半徑為 10px */
+    border: 1px solid black; /* 邊框為 1px 黑色實線 */
 }
 
 .board-row:after {
-    clear: both;
-    content: '';
-    display: table;
+    clear: both; /* 清除浮動 */
+    content: ''; /* 內容為空 */
+    display: table; /* 顯示內容為表格 */
+
 }
 
 .status {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* 底部外邊距為 10px，與下方元素保持間距 */
 }

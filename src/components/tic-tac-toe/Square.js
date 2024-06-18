@@ -1,5 +1,5 @@
 import React from "react";
-import "./tictactoe.css";
+import "./tictactoe.css"; // 引入自定義的 CSS 樣式
 
 function Square({ value, onSquareClick }) {
   return (
