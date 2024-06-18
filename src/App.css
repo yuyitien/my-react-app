@@ -1,40 +1,40 @@
 .App {
-  text-align: center;
-  background-color: antiquewhite;
+  text-align: center; /* 文字對齊中心 */
+  background-color: antiquewhite; /* 背景顏色為古董白 */
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 40vmin; /* 高度為視口寬度的 40% */
+  pointer-events: none; /* 禁止指針事件 */
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; /* 若無動畫偏好，設定無限循環的旋轉動畫，持續 20 秒線性播放 */
   }
 }
 
 .App-header {
-  background-color: blueviolet;
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: blueviolet; /* 背景顏色為藍紫色 */
+  min-height: 50vh; /* 最小高度為視口高度的 50% */
+  display: flex; /* 使用彈性盒子布局 */
+  flex-direction: column; /* 元素垂直排列 */
+  align-items: center; /* 元素水平居中 */
+  justify-content: center; /* 元素垂直居中 */
+  font-size: calc(10px + 2vmin); /* 字體大小根據視口寬度計算 */
+  color: white; /* 字體顏色為白色 */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #61dafb; /* 連結顏色為藍色 (#61dafb) */
 }
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* 動畫開始時，旋轉角度為 0 度 */
   }
 
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* 動畫結束時，旋轉角度為 360 度 */
   }
 }
