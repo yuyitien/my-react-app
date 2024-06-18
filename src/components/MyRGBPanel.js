@@ -1,26 +1,31 @@
-import React from "react";
-import { useState } from "react";
-import MySlider from "./MySlider";
+import React from "react"; // 引入 React 庫
+import { useState } from "react"; // 引入 useState 鉤子
+import MySlider from "./MySlider"; // 引入 MySlider 組件
 
 function MyRGBPanel() {
+    // 使用 useState 定義 r, g, b 狀態，初始值為 128
     const [r, setR] = useState(128);
     const [g, setG] = useState(128);
     const [b, setB] = useState(128);
 
+    // 更新 r 狀態的函數
     const updateR = (v) => setR(v);
+    // 更新 g 狀態的函數
     const updateG = (v) => setG(v);
+    // 更新 b 狀態的函數
     const updateB = (v) => setB(v);
 
+    // 定義 RGB 面板的樣式
     const rgbCss = {
-        border: "1px solid blue",
-        borderRadius: "20px",
-        width: "300px",
-        display: "flex",
-        flexDirection: "column",
-        padding: "20px",
-        justifyContent: "center",
-        alignItems: "center",
-        margin: "auto",
+        border: "1px solid blue", // 邊框設為藍色實線
+        borderRadius: "20px", // 邊框圓角
+        width: "300px", // 寬度
+        display: "flex", // 使用 flex 布局
+        flexDirection: "column", // 元素垂直排列
+        padding: "20px", // 內邊距
+        justifyContent: "center", // 垂直居中
+        alignItems: "center", // 水平居中
+        margin: "auto", // 自動水平外邊距
       };
   return (
     <>
@@ -48,4 +53,4 @@ function MyRGBPanel() {
   );
 }
 
-export default MyRGBPanel;
+export default MyRGBPanel; // 導出 MyRGBPanel 組件
