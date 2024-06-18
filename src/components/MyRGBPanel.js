@@ -42,8 +42,8 @@ function MyRGBPanel() {
             backgroundColor: `rgb(${r}, ${g}, ${b})`, // 根據 r, g, b 值設置背景顏色
           }}
         />
-        <span>R: </span> // 紅色滑動條標籤
-        <MySlider onChange={updateR} /> // MySlider 組件，當值改變時調用 updateR
+        <span>R: </span> /* 紅色滑動條標籤 */
+        <MySlider onChange={updateR} /> --MySlider 組件，當值改變時調用 updateR
         <span>G: </span> // 綠色滑動條標籤
         <MySlider onChange={updateG} /> // MySlider 組件，當值改變時調用 updateG
         <span>B: </span> // 藍色滑動條標籤
